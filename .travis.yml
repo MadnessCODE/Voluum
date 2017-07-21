@@ -6,4 +6,7 @@ php:
   - hhvm # on Trusty only
   - nightly
 sudo: false
+matrix:
+    allow_failures:
+        - php: hhvm
 script: phpunit --configuration phpunit.xml
