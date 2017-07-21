@@ -73,7 +73,7 @@ $result = $report_api->post("lander/xxxxx-xxxxxx-xxxxxx-xxxxx", [
 Delete lander:
 ```php
 $result = $report_api->delete("lander", [
-   "ids" => "xxxxx-xxxxxx-xxxxxx-xxxxx"
+   "ids" => "xxxxx-xxxxxx-xxxxxx-xxxxxx"
 ]);
 ```
 
