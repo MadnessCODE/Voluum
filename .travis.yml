@@ -6,3 +6,4 @@ php:
   - hhvm # on Trusty only
   - nightly
 sudo: false
+script: phpunit --configuration phpunit.xml
