@@ -3,6 +3,7 @@
     "description": "Voluum SDK for PHP",
     "keywords": ["voluum", "sdk"],
     "type": "library",
+    "version": "1.0.0",
     "require": {
 
     },
