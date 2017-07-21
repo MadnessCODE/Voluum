@@ -68,7 +68,7 @@ $result = $report_api->post("lander", [
 
 Edit lander:
 ```php
-$result = $report_api->post("lander/xxxxx-xxxxxx-xxxxxx-xxxxx", [
+$result = $report_api->put("lander/xxxxx-xxxxxx-xxxxxx-xxxxx", [
    "namePostfix" => "Test 1",
    "url" => "http://example.com"
 ]);
