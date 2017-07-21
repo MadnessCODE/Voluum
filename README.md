@@ -1,4 +1,5 @@
 # Voluum SDK For PHP
+[![Build Status](https://travis-ci.org/MadnessCODE/Voluum.svg?branch=master)](https://travis-ci.org/MadnessCODE/Voluum)
 
 This repository contains the open source PHP SDK that allows you to access the Voluum REST API
 
