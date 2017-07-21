@@ -1,5 +1,8 @@
 # Voluum SDK For PHP
 [![Build Status](https://travis-ci.org/MadnessCODE/Voluum.svg?branch=master)](https://travis-ci.org/MadnessCODE/Voluum)
+[![Latest Stable Version](https://poser.pugx.org/madnesscode/voluum/v/stable)](https://packagist.org/packages/madnesscode/voluum)
+[![Total Downloads](https://poser.pugx.org/madnesscode/voluum/downloads)](https://packagist.org/packages/madnesscode/voluum)
+[![License](https://poser.pugx.org/madnesscode/voluum/license)](https://packagist.org/packages/madnesscode/voluum)
 
 This repository contains the open source PHP SDK that allows you to access the Voluum REST API
 
@@ -13,7 +16,7 @@ composer require madnesscode/voluum
 
 ## Usage
 
-> **Note:** This version of the Voluum SDK for PHP requires PHP 5.7 or greater.
+> **Note:** This version of the Voluum SDK for PHP requires PHP 5.6 or greater.
 
 Example
 
@@ -81,4 +84,4 @@ $result = $report_api->delete("lander", [
 Complete documentation is available [here](https://developers.voluum.com/).
 
 ## License
-Please see the [license file]() for more information.
+Please see the [license file](https://github.com/MadnessCODE/Voluum/blob/master/LICENSE) for more information.
