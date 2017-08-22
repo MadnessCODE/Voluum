@@ -17,5 +17,10 @@
             "email": "madness.studio@gmail.com"
         }
     ],
+	"autoload": {
+        "psr-4": {
+            "Voluum": "src/"
+        }
+    },
     "minimum-stability": "stable"
 }
