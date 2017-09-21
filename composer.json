@@ -18,8 +18,8 @@
         }
     ],
 	"autoload": {
-        "psr-0": {
-            "Voluum": "src/"
+        "psr-4": {
+            "MadnessCODE\\Voluum\\": "src/"
         }
     },
     "minimum-stability": "stable"
