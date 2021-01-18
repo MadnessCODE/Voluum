@@ -71,4 +71,12 @@
          * @return boolean
          */
         public function getToken();
+
+        /**
+         * @param $endpoint
+         * @param $method
+         * @param $params
+         * @return mixed
+         */
+        public function csv($endpoint, $method, $params);
     }

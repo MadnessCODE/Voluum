@@ -32,6 +32,11 @@
         protected $client;
 
         /**
+         * @var array 
+         */
+        protected $injectHeader = [];
+
+        /**
          * Curl constructor.
          */
         public function __construct(Client\APIInterface $client)
@@ -116,6 +121,26 @@
             return true;
         }
 
+        /**
+         * Send as csv
+         * 
+         * @param string $endpoint
+         * @param string $method
+         * @param string $params
+         * @return Response\Single
+         * @throws Exceptions\AuthException
+         * @throws Exceptions\TransportException
+         */
+        public function csv($endpoint, $method, $params)
+        {
+            $this->injectHeader = [
+                'Content-Type: text/csv',
+            ];
+            $result = $this->curl($this->url . $endpoint, $method, $params);
+            $this->injectHeader = [];
+            
+            return $result;
+        }
 
         /**
          * Curl
@@ -137,7 +162,11 @@
                 "Accept: application/json"
             ];
 
-            if (count($params) && $request_method == "GET") {
+            if (!empty($this->injectHeader)) {
+                $header = $this->injectHeader;
+            }
+            
+            if (!empty($params) && $request_method == "GET") {
                 $query = http_build_query($params);
                 $query = preg_replace('/%5B[0-9]+%5D/simU', '%5B%5D', $query);
                 $url .= '/?' . $query;

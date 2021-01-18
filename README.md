@@ -81,6 +81,13 @@ $result = $report_api->delete("lander", [
 ]);
 ```
 
+Upload conversion:
+```php
+$result = $report_api->csv("conversion", 
+    "POST", 
+    "c384EFV6JHQODRN70575OK6,1.2,abc123,app_install");
+```
+
 Complete documentation is available [here](https://developers.voluum.com/).
 
 ## License
