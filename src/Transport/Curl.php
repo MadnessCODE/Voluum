@@ -182,7 +182,7 @@
                 CURLOPT_CUSTOMREQUEST => $request_method,
                 CURLOPT_SSL_VERIFYHOST => 0,
                 CURLOPT_SSL_VERIFYPEER => false,
-                CURLOPT_POSTFIELDS => json_encode($params),
+                CURLOPT_POSTFIELDS => is_array($params) ? json_encode($params) : $params,
                 CURLOPT_HTTPHEADER => $header
             );
 
